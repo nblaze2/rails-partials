@@ -10,17 +10,17 @@
 
   <body>
     <header>
-      <ul>
-        <li>About Us</li>
-        <li>Legal</li>
-        <li>Careers</li>
-        <li>Terms of Service</li>
-      </ul>
+      <%= render "layouts/menu_list" %>
+      <%= render "layouts/flash" %>
     </header>
     <section id="main">
       <%= yield %>
     </section>
-    <section id="sidebar"></section>
-    <footer></footer>
+    <section id="sidebar">
+      <%= render "layouts/sidebar" %>
+    </section>
+    <footer>
+      <%= render "layouts/menu_list" %>
+    </footer>
   </body>
 </html>
